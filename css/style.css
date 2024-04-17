@@ -1,0 +1,482 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.phone-navbar {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.phone-navbar .hamburger {
+  width: 30%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px;
+  color: green;
+  border-style: solid;
+}
+.phone-navbar .hamburger .line {
+  height: 3px;
+  width: 70%;
+  background-color: green;
+}
+
+.pc-navbar {
+  display: none;
+}
+
+.banner {
+  background: silver;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.banner .first-text {
+  font-size: 24px;
+}
+.banner .second-text {
+  margin-top: 40px;
+}
+.banner button {
+  height: 5vh;
+  width: 25%;
+  border-radius: 5px;
+  background-color: green;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+.banner .eco4-image img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.services {
+  font-family: sans-serif;
+  background: silver;
+  height: 100vh;
+}
+.services h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.services .card-container .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 20px;
+  background-color: silver;
+}
+.services .card-container .card h4 {
+  font-size: 24px;
+}
+.services .card-container .card a {
+  text-decoration: none;
+  color: green;
+}
+
+.mission-statement {
+  font-family: sans-serif;
+  height: 50vh;
+  background-color: silver;
+}
+.mission-statement .image {
+  width: 100%;
+  height: 50vh;
+  background: url("../images/mission.png");
+  background-position: center;
+  background-size: cover;
+}
+.mission-statement .image .overlay {
+  height: 50vh;
+  background: rgba(39, 38, 38, 0.704);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mission-statement .image .overlay h4 {
+  font-size: 2rem;
+}
+
+.features {
+  font-family: sans-serif;
+  background: white;
+  height: 100vh;
+}
+.features .section-text {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.features .section-text h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.features .fbe-text {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.features .fbe-text h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.features .card-section {
+  margin-top: 50px;
+  border: 2px solid gray;
+  background: silver;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+}
+.features .card-section h2 {
+  font-size: 2rem;
+}
+.features .card-section ul {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+.features .card-section ul p {
+  margin-left: -1rem;
+}
+
+.questions {
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+.questions .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.questions .text h2 {
+  font-size: 2rem;
+}
+.questions .form {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.questions .form form {
+  margin-top: 50px;
+  background-color: #a2b2ae;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  width: 90%;
+}
+.questions .form form input::-moz-placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form input::placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form textarea::-moz-placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form textarea::placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form input[type=text],
+.questions .form form input[type=email],
+.questions .form form textarea, .questions .form form button {
+  border: 1px solid black;
+}
+.questions .form form button {
+  padding: 10px 0;
+}
+
+.footer {
+  font-family: sans-serif;
+  background: #a2b2ae;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .text {
+  font-size: 14px;
+}
+.footer p {
+  text-align: center;
+}
+.footer button {
+  padding: 10px 40px;
+  background-color: green;
+  border: none;
+  color: white;
+}
+.footer #email {
+  width: 80%;
+  padding: 10px;
+}
+
+.copyrights {
+  font-family: sans-serif;
+  background: green;
+  height: 5vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .phone-navbar {
+    display: none;
+  }
+  .pc-navbar {
+    font-family: sans-serif;
+    display: block;
+  }
+  .pc-navbar .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pc-navbar .flex-container ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: green;
+  }
+  .pc-navbar .flex-container ul button {
+    padding: 10px 50px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  .banner {
+    font-family: sans-serif;
+    height: 40vh;
+  }
+  .banner img {
+    height: 100%;
+    width: 100%;
+  }
+  .banner .first-text {
+    margin-top: 50px;
+  }
+  .services {
+    font-family: sans-serif;
+    height: 60vh;
+  }
+  .services .card-container {
+    display: flex;
+    gap: 10px;
+  }
+  .mission-statement {
+    font-family: sans-serif;
+  }
+  .mission-statement .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mission-statement .overlay p {
+    width: 43%;
+  }
+  .features {
+    font-family: sans-serif;
+    height: 45vh;
+  }
+  .features .row {
+    display: flex;
+  }
+  .features .fbe-text {
+    text-align: left;
+  }
+  .features .card-section {
+    display: flex;
+    gap: 10px;
+  }
+  .questions {
+    font-family: sans-serif;
+    height: 35vh;
+  }
+  .questions .text {
+    margin-top: 50px;
+  }
+  .questions .form {
+    width: 49%;
+  }
+  .footer {
+    height: 30vh;
+  }
+  .footer .first-content {
+    font-size: 15px;
+  }
+  .footer #email {
+    width: 70%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    font-family: sans-serif;
+    height: 90vh;
+  }
+  .banner .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 90vh;
+  }
+  .banner .text .first-text {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .banner .text .second-text {
+    width: 72%;
+  }
+  .banner .image {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+  .banner .image img {
+    width: 100%;
+    height: auto;
+  }
+  .services {
+    font-family: sans-serif;
+    height: 110vh;
+  }
+  .mission-statement {
+    font-family: sans-serif;
+    height: 70vh;
+  }
+  .mission-statement .image {
+    height: 70vh;
+  }
+  .mission-statement .image .overlay {
+    height: 70vh;
+  }
+  .mission-statement .image .overlay p {
+    width: 25%;
+    margin-top: 20px;
+  }
+  .features {
+    font-family: sans-serif;
+    height: 70vh;
+    line-height: 20px;
+  }
+  .features .card-section {
+    line-height: 20px;
+    width: 40%;
+    margin-left: 30px;
+  }
+  .features .card-section .h2 {
+    margin-top: 20px;
+  }
+  .questions {
+    font-family: sans-serif;
+    height: 50vh;
+  }
+  .footer {
+    font-family: sans-serif;
+    height: 40vh;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
