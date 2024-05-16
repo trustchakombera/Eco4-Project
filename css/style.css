@@ -59,6 +59,15 @@ table {
   padding: 1rem;
   justify-content: space-between;
 }
+.phone-navbar .bttn {
+  height: 5vh;
+  width: 20vh;
+  border-radius: 5px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding-top: 20px;
+}
 .phone-navbar .hamburger {
   width: 30%;
   height: 10vh;
@@ -94,12 +103,12 @@ table {
 }
 .banner button {
   height: 5vh;
-  width: 25%;
+  width: 20vh;
   border-radius: 5px;
   background-color: green;
   border: none;
   color: white;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .banner .eco4-image img {
   width: 100%;

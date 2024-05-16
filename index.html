@@ -12,11 +12,42 @@
     
 <nav class="phone-navbar">
     <img src="images\Group 66.png" alt="">
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./images/Group 66.png" alt=""></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><button  class="bttn">Sign Up</button></a>
+                </li>
+                
+               
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
 </nav>
 
    
@@ -151,7 +182,7 @@
                     <p>Please feel free to call or email us, or use our contact form to get in touch with us. We look forward to hearing from you!</p>
                     <p>Emergency? Visit us on our website www.eco4.org.uk</p>
                 </div>
-                <div class="form col-md-6">
+                <div class="form col-md-6    ">
                     <form  action="">
                         <input type="text" id="name" name="name" placeholder="Name">
                         <input type="text" id="email" name="email" placeholder="Email Address">
@@ -175,5 +206,6 @@
     <section class="copyrights">
         <p>2024 ECO4 ALL RIGHTS RESERVED</p>
     </section>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>

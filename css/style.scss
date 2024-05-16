@@ -52,6 +52,16 @@ table {
     padding: 1rem;
     justify-content: space-between;
 
+    .bttn{
+        height: 5vh;
+        width:20vh;
+        border-radius: 5px;
+        background-color: green;
+        border: none;
+        color: white;
+        padding-top: 20px;
+     
+    }
 .hamburger{
         
         width: 30%;
@@ -90,12 +100,12 @@ table {
 
     button{
         height: 5vh;
-        width: 25%;
+        width:20vh;
         border-radius: 5px;
         background-color: green;
         border: none;
         color: white;
-        margin-top: 20px;
+        padding-top: 20px;
      
     }
 
